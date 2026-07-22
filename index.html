@@ -1,1 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ana Catarina Sousa — Proof Theory &amp; Logic</title>
+<meta name="description" content="Personal academic site of Ana Catarina Sousa — research on proof search, natural deduction and partial proof terms.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
+<!-- ============ NAV ============ -->
+<header class="site-nav" id="site-nav">
+  <a href="#top" class="brand" aria-label="Ana Catarina Sousa, home">A·C·S</a>
+
+  <nav class="nav-links" id="nav-links">
+    <a href="#about"><span class="tag">§1</span>About</a>
+    <a href="#research"><span class="tag">§2</span>Research</a>
+    <a href="#publications"><span class="tag">§3</span>Publications</a>
+    <a href="#cv"><span class="tag">§4</span>CV</a>
+    <a href="#contact"><span class="tag">§5</span>Contact</a>
+  </nav>
+
+  <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">Doctor of Philosophy · Applied Mathematics</p>
+      <h1 class="hero-title">Ana Catarina<br>Sousa</h1>
+      <p class="hero-thesis">
+        <span class="mono small">⊢</span>
+        Proof Search in Natural Deduction with Partial Proof Terms
+      </p>
+
+      <div class="hero-tree" aria-hidden="true">
+        <svg viewBox="0 0 860 300" class="derivation" id="derivation-svg">
+          <!-- premises -->
+          <text x="70"  y="40" class="prem">Applied Mathematics</text>
+          <text x="300" y="40" class="prem">University of Minho</text>
+          <text x="540" y="40" class="prem">Advised by J. Espírito Santo</text>
+          <text x="740" y="40" class="prem">30 Mar 2026</text>
+
+          <!-- inference bar 1 -->
+          <line x1="40" y1="62" x2="820" y2="62" class="bar bar-1"/>
+          <text x="828" y="58" class="rule-name">Premises</text>
+
+          <text x="430" y="105" class="mid mono" text-anchor="middle">Doctoral Program in Applied Mathematics ⊢ dissertation</text>
+
+          <!-- inference bar 2 -->
+          <line x1="140" y1="130" x2="720" y2="130" class="bar bar-2"/>
+          <text x="728" y="126" class="rule-name">Defence</text>
+
+          <text x="430" y="175" class="mid2 mono" text-anchor="middle">⊢ <tspan class="q">Proof Search in Natural Deduction with Partial Proof Terms</tspan></text>
+
+          <!-- inference bar 3 : final -->
+          <line x1="230" y1="200" x2="630" y2="200" class="bar bar-3"/>
+          <text x="638" y="196" class="rule-name">PhD-Intro</text>
+
+          <text x="430" y="250" class="conclusion mono" text-anchor="middle">⊢ Ana Catarina Sousa : PhD</text>
+        </svg>
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll to content">
+        <span>read the derivation</span>
+        <svg width="14" height="20" viewBox="0 0 14 20"><path d="M7 1v16M1 11l6 6 6-6" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about" data-reveal>
+    <div class="section-head">
+      <span class="tag">§1</span>
+      <h2>About</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="portrait-frame">
+        <div class="portrait-placeholder" aria-hidden="true">A·C·S</div>
+        <p class="caption">Photo — replace with your own (about-photo placeholder)</p>
+      </div>
+
+      <div class="about-copy">
+        <!-- EDIT ME: replace with your real bio -->
+        <p class="lede">
+          I'm a mathematician working at the intersection of proof theory and logic,
+          interested in what it means for a piece of reasoning to be <em>almost</em> a proof —
+          and what that tells us about how proofs are found in the first place.
+        </p>
+        <p>
+          My doctoral research, carried out at the <strong>Centre of Mathematics</strong> of the
+          <strong>University of Minho</strong>, developed <em>Partial Proof Terms</em> — a way of
+          annotating incomplete derivations in natural deduction so that proof search itself
+          becomes an object of formal study, rather than a black box outside the calculus.
+        </p>
+        <p class="placeholder-note">
+          [Placeholder — add a paragraph or two about your background, interests outside the thesis,
+          and what you're looking for next: postdoc, industry, teaching, etc.]
+        </p>
+
+        <dl class="facts">
+          <div><dt>Institution</dt><dd>University of Minho, Portugal</dd></div>
+          <div><dt>Programme</dt><dd>Doctoral Program in Applied Mathematics</dd></div>
+          <div><dt>Advisor</dt><dd>José Espírito Santo</dd></div>
+          <div><dt>Defence</dt><dd>30 March 2026</dd></div>
+          <div><dt>Funding</dt><dd>FCT · CMAT — Centre of Mathematics</dd></div>
+        </dl>
+
+        <div class="link-row">
+          <a href="#" class="pill">Google Scholar ↗</a>
+          <a href="#" class="pill">ORCID ↗</a>
+          <a href="#" class="pill">GitHub ↗</a>
+          <a href="#" class="pill">CV (PDF) ↓</a>
+        </div>
+        <p class="placeholder-note small">[Links above are placeholders — point them at your real profiles in index.html]</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RESEARCH ============ -->
+  <section class="section alt" id="research" data-reveal>
+    <div class="section-head">
+      <span class="tag">§2</span>
+      <h2>Research</h2>
+    </div>
+
+    <p class="lede narrow">
+      Proof search asks a deceptively simple question: given a claim, is there a derivation of it —
+      and if so, how do we find one? The theory is usually built on
+      <span class="mono chip">sequent calculi</span>, from Gentzen's original system to modern
+      <span class="mono chip">G3</span> systems and <span class="mono chip">focusing</span>,
+      alongside automated theorem-proving methods like <span class="mono chip">resolution</span>
+      and <span class="mono chip">tableaux</span>. My thesis asks what happens when the same
+      questions are asked directly in <strong>natural deduction</strong> — the format closest to
+      how mathematicians actually write proofs — by tracking derivations that are still
+      <em>under construction</em>.
+    </p>
+
+    <div class="two-col">
+      <div>
+        <h3 class="h-mono">The tension</h3>
+        <p>
+          Proof-search procedures are usually judged on completeness and efficiency. But a
+          derivation in progress doesn't look like a finished proof — it looks like a proof with
+          holes in it. Most formal accounts either idealise this away or fall back on sequent
+          calculus. This thesis keeps the holes, and gives them a name: <strong>Partial Proof
+          Terms</strong> (PPTs).
+        </p>
+      </div>
+      <div>
+        <h3 class="h-mono">Case studies</h3>
+        <div class="chip-row">
+          <span class="mono chip large">LJT</span>
+          <span class="mono chip large">NJT</span>
+          <span class="mono chip large">LKT</span>
+          <span class="mono chip large">NKT</span>
+          <span class="mono chip large">IC</span>
+        </div>
+        <p class="small-note">Five proof systems, spanning intuitionistic and classical logic, reworked to accommodate partial derivations.</p>
+      </div>
+    </div>
+
+    <h3 class="h-mono contrib-title">Contributions</h3>
+    <ul class="contrib-grid">
+      <li>
+        <span class="rule-tag">PPT</span>
+        Partial Proof Terms as a new formal tool for studying proof search, applied across five case-study systems.
+      </li>
+      <li>
+        <span class="rule-tag">Ext</span>
+        Extension of total proof systems to accommodate partial sequents, with search procedures defined as rewrite rules acting on PPTs.
+      </li>
+      <li>
+        <span class="rule-tag">≅</span>
+        An isomorphism between focusing and intercalation, connecting two previously separate approaches to proof search.
+      </li>
+      <li>
+        <span class="rule-tag">IC</span>
+        An updated Intercalation Calculus (Sieg), integrated with bidirectional natural deduction and focused fragments such as <span class="mono">NJT<sup>∂</sup></span>.
+      </li>
+    </ul>
+
+    <h3 class="h-mono contrib-title">Future work</h3>
+    <ul class="future-list">
+      <li><span class="mono">NJT<sup>∂</sup></span> — extension to classical logic, and a correspondence with a sequent-calculus system.</li>
+      <li>Generalising the focusing/intercalation equivalence to further subsystems and fragments.</li>
+      <li>Integrating proof search with cut-elimination and normalisation on partial derivations.</li>
+      <li>Applying Partial Proof Terms to "less idealised" models of proof search.</li>
+      <li>Generating human-readable output for use in interactive theorem proving.</li>
+    </ul>
+  </section>
+
+  <!-- ============ PUBLICATIONS ============ -->
+  <section class="section" id="publications" data-reveal>
+    <div class="section-head">
+      <span class="tag">§3</span>
+      <h2>Publications</h2>
+    </div>
+
+    <ul class="pub-list">
+      <li class="pub">
+        <div class="pub-year mono">2026</div>
+        <div class="pub-body">
+          <h3>Proof Search in Natural Deduction with Partial Proof Terms</h3>
+          <p class="pub-meta">PhD Thesis · Doctoral Program in Applied Mathematics · University of Minho · advised by José Espírito Santo</p>
+          <div class="link-row tight">
+            <a href="#" class="pill small">Thesis (PDF) ↓</a>
+            <a href="#" class="pill small">Defence slides ↓</a>
+          </div>
+        </div>
+      </li>
+
+      <!-- EDIT ME: placeholder entries below — replace with real publications -->
+      <li class="pub placeholder">
+        <div class="pub-year mono">20XX</div>
+        <div class="pub-body">
+          <h3>[Placeholder — paper title]</h3>
+          <p class="pub-meta">[Venue / journal / conference], with [co-authors]</p>
+          <div class="link-row tight">
+            <a href="#" class="pill small">PDF ↓</a>
+            <a href="#" class="pill small">DOI ↗</a>
+          </div>
+        </div>
+      </li>
+      <li class="pub placeholder">
+        <div class="pub-year mono">20XX</div>
+        <div class="pub-body">
+          <h3>[Placeholder — paper title]</h3>
+          <p class="pub-meta">[Venue / journal / conference], with [co-authors]</p>
+          <div class="link-row tight">
+            <a href="#" class="pill small">PDF ↓</a>
+            <a href="#" class="pill small">DOI ↗</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ============ CV ============ -->
+  <section class="section alt" id="cv" data-reveal>
+    <div class="section-head">
+      <span class="tag">§4</span>
+      <h2>CV &amp; Teaching</h2>
+    </div>
+
+    <div class="timeline">
+      <div class="t-row">
+        <div class="t-date mono">2020 – 2026</div>
+        <div class="t-content">
+          <h3>PhD, Applied Mathematics</h3>
+          <p>University of Minho — <em>Proof Search in Natural Deduction with Partial Proof Terms</em>, advised by José Espírito Santo. Supported by FCT and the Centre of Mathematics (CMAT).</p>
+        </div>
+      </div>
+      <div class="t-row placeholder">
+        <div class="t-date mono">20XX – 20XX</div>
+        <div class="t-content">
+          <h3>[Placeholder — MSc / previous degree]</h3>
+          <p>[Institution, thesis or programme title, advisor if applicable]</p>
+        </div>
+      </div>
+      <div class="t-row placeholder">
+        <div class="t-date mono">20XX – present</div>
+        <div class="t-content">
+          <h3>[Placeholder — teaching role]</h3>
+          <p>[Course names, level, institution]</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="link-row">
+      <a href="#" class="pill">Full CV (PDF) ↓</a>
+    </div>
+    <p class="placeholder-note small">[Add earlier education, teaching, talks, and awards as more rows in the timeline]</p>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section contact" id="contact" data-reveal>
+    <div class="section-head">
+      <span class="tag">§5</span>
+      <h2>Contact</h2>
+    </div>
+
+    <p class="lede narrow">
+      Happy to hear from anyone working on proof theory, type theory, or automated reasoning —
+      or anyone who just wants to talk about proofs with holes in them.
+    </p>
+
+    <a class="email-link mono" href="mailto:your.email@example.com">your.email@example.com</a>
+
+    <div class="link-row">
+      <a href="#" class="pill">Google Scholar ↗</a>
+      <a href="#" class="pill">ORCID ↗</a>
+      <a href="#" class="pill">GitHub ↗</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>© <span id="year"></span> Ana Catarina Sousa. Research supported by FCT and CMAT, University of Minho.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
