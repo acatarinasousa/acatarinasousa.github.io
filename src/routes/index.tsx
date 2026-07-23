@@ -6,10 +6,10 @@ import portrait from "@/assets/portrait.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Ana Catarina Sousa — Applied Mathematics" },
-      { name: "description", content: "Ana Catarina Sousa, PhD student in Applied Mathematics at the University of Minho, working on proof search in natural deduction." },
+      { title: "Ana Catarina Sousa" },
+      { name: "description", content: "Ana Catarina Sousa, PhD in Applied Mathematics, University of Porto, working on proof search in natural deduction." },
       { property: "og:title", content: "Ana Catarina Sousa" },
-      { property: "og:description", content: "PhD student in Applied Mathematics at the University of Minho." },
+      { property: "og:description", content: "PhD in Applied Mathematics." },
     ],
   }),
   component: Index,
@@ -37,9 +37,9 @@ function JobBanner() {
       <div className="mx-auto flex max-w-6xl items-center gap-4 px-6 py-3.5">
         <Search className="h-4 w-4 shrink-0 text-muted-foreground" strokeWidth={1.5} />
         <p className="text-[15px] text-foreground">
-          I am currently looking for a postdoc position.
+          Currently looking for a postdoc position!
         </p>
-        <a href="mailto:acsousa@math.uminho.pt" className="ml-auto hidden text-[15px] underline sm:block">
+        <a href="mailto:acsousa@fe.up.pt" className="ml-auto hidden text-[15px] underline sm:block">
           Get in touch
         </a>
       </div>
@@ -55,6 +55,7 @@ function Nav() {
           Ana Catarina Sousa
         </Link>
         <div className="ml-auto flex items-center gap-7">
+          <a href="#research" className="!text-primary-foreground/70 !no-underline hover:!text-primary-foreground">About Me</a>
           <a href="#research" className="!text-primary-foreground/70 !no-underline hover:!text-primary-foreground">Research</a>
           <a href="#teaching" className="!text-primary-foreground/70 !no-underline hover:!text-primary-foreground">Teaching</a>
         </div>
@@ -79,37 +80,33 @@ function Sidebar() {
         <h1 className="text-2xl">Ana Catarina Sousa</h1>
         <p className="mt-1 text-sm text-muted-foreground">she/her</p>
         <p className="mt-3 text-sm text-muted-foreground">
-          acsousa [at] math [dot] uminho [dot] pt
+          acsousa [at] fe [dot] up [dot] pt
         </p>
       </div>
       <ul className="space-y-2.5 text-[15px] text-muted-foreground">
         <li className="flex items-center gap-2.5">
           <MapPin className="h-4 w-4 shrink-0" strokeWidth={1.5} />
-          Braga, Portugal
+          Porto, Portugal
         </li>
         <li className="flex items-center gap-2.5">
           <Building2 className="h-4 w-4 shrink-0" strokeWidth={1.5} />
-          University of Minho
+          University of Porto
         </li>
         <li className="flex items-center gap-2.5">
           <Mail className="h-4 w-4 shrink-0" strokeWidth={1.5} />
-          <a href="mailto:acsousa@math.uminho.pt">Email</a>
-        </li>
-        <li className="flex items-center gap-2.5">
-          <Github className="h-4 w-4 shrink-0" strokeWidth={1.5} />
-          <a href="#">Github</a>
+          <a href="mailto:acsousa@fe.up.pt">Email</a>
         </li>
         <li className="flex items-center gap-2.5">
           <Linkedin className="h-4 w-4 shrink-0" strokeWidth={1.5} />
-          <a href="#">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/ana-catarina-sousa-6814a032b/">LinkedIn</a>
         </li>
         <li className="flex items-center gap-2.5">
           <FlaskConical className="h-4 w-4 shrink-0" strokeWidth={1.5} />
-          <a href="#">ORCID</a>
+          <a href="https://orcid.org/0000-0002-5352-4807">ORCID</a>
         </li>
         <li className="flex items-center gap-2.5">
           <GraduationCap className="h-4 w-4 shrink-0" strokeWidth={1.5} />
-          <a href="#">CiênciaVitae</a>
+          <a href="https://www.cienciavitae.pt/8B17-243B-9170">CiênciaVitae</a>
         </li>
       </ul>
     </aside>
