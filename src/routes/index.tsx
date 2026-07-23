@@ -150,10 +150,10 @@ function Content() {
                 ["WoLLIC 2025", "Porto, PT", "July 2025", "https://wollic2025.github.io"],
                 ["Women in Logic 2024", "Tallinn, EE", "July 2024", "https://sites.google.com/view/wil24/home"],
                 ["SPLogic", "Campinas, BR", "February 2023", "https://www.cle.unicamp.br/splogic/"],
-                ["Autumn School Proof and Computation", "Fischbachau, DE", "September 2022", "https://www.mathematik.uni-muenchen.de/~schwicht/pc25.php"],
+                ["Autumn School Proof and Computation", "Fischbachau, DE", "September 2022", "https://www.mathematik.uni-muenchen.de/~schwicht/pc22.php"],
               ].map(([e, l, d, link]) => (
                 <tr key={e} className="border-t border-border">
-                   <td className="px-4 py-2.5"><a href={link}>{e}</a></td>
+                   <td className="px-4 py-2.5"><a href={link} target="_blank" rel="noopener noreferrer">{e}</a></td>
                   <td className="px-4 py-2.5 text-muted-foreground">{l}</td>
                   <td className="px-4 py-2.5 text-muted-foreground">{d}</td>
                 </tr>
