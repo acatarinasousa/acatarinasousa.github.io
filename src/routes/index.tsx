@@ -18,7 +18,8 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <TopBar />
+      <Nav />
+      <JobBanner />
       <main className="mx-auto max-w-6xl px-6 py-12 lg:py-16">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-[280px_1fr] lg:gap-16">
           <Sidebar />
@@ -48,7 +49,7 @@ function JobBanner() {
 
 function Nav() {
   return (
-    <header className="bg-primary text-primary-foreground">
+    <header className="sticky top-0 z-40 bg-primary text-primary-foreground">
       <nav className="mx-auto flex max-w-6xl items-center gap-8 px-6 py-6 text-[15px]">
         <Link to="/" className="!text-primary-foreground !no-underline font-normal tracking-tight">
           Ana Catarina Sousa
@@ -60,15 +61,6 @@ function Nav() {
         </div>
       </nav>
     </header>
-  );
-}
-
-function TopBar() {
-  return (
-    <div className="sticky top-0 z-50">
-      <JobBanner />
-      <Nav />
-    </div>
   );
 }
 
