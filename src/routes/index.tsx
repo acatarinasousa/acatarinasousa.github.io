@@ -123,7 +123,7 @@ function Content() {
         <h2 className="text-3xl">About Me</h2>
         <div className="mt-5 space-y-4 text-[17px] leading-relaxed text-foreground/90">
           <p>
-            Hi! I'm Ana Catarina, a PhD student in the Doctoral Program in Applied
+            Hello! I'm Ana Catarina, a PhD student in the Doctoral Program in Applied
             Mathematics at the <a href="#">University of Minho</a>, under the
             supervision of <a href="#">José Espírito Santo</a>. My research sits at
             the intersection of proof theory and computer science, with a current
