@@ -59,6 +59,7 @@ function Nav() {
           <a href="#research" className="!text-primary-foreground/70 !no-underline hover:!text-primary-foreground">About Me</a>
           <a href="#research" className="!text-primary-foreground/70 !no-underline hover:!text-primary-foreground">Research</a>
           <a href="#teaching" className="!text-primary-foreground/70 !no-underline hover:!text-primary-foreground">Teaching</a>
+          <a href="#teaching" className="!text-primary-foreground/70 !no-underline hover:!text-primary-foreground">CV</a>
         </div>
       </nav>
     </header>
@@ -128,7 +129,7 @@ function Content() {
            I'm a collaborator member of <a href="https://liacc.fe.up.pt/liaccwp/" target="_blank" rel="noopener noreferrer">LIACC – Artificial Intelligence and Computer Science Laboratory</a> of the University of Porto. In parallel, I am an Invited Assistant Professor at the Faculty of Sciences of University of Porto, where I teach Discrete Mathematics and Theory of Computation. 
           </p>
           <p>
-            My academic interests include proof search, proof theory, type theory and the design of interactive proof assistants.
+            My academic interests include proof search, proof theory, type theory and proof assistants.
           </p>
         </div>
       </section>
