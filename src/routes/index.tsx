@@ -123,21 +123,14 @@ function Content() {
         <h2 className="text-3xl">About Me</h2>
         <div className="mt-5 space-y-4 text-[17px] leading-relaxed text-foreground/90">
           <p>
-            Hello! I'm Ana Catarina, a PhD student in the Doctoral Program in Applied
-            Mathematics at the <a href="#">University of Minho</a>, under the
-            supervision of <a href="#">José Espírito Santo</a>. My research sits at
-            the intersection of proof theory and computer science, with a current
-            focus on <em>proof search in natural deduction with partial proof terms</em>.
+            Hi! I'm Ana Catarina and I just concluded my <a href="https://map-pdma.up.pt">PhD in Applied Mathematics</a> , a joint program of the Portuguese universities of Aveiro, Porto and Minho, where I studied “Proof Search in Natural Deduction with Partial Proof Terms”, under the
+            supervision of <a href="https://w3.math.uminho.pt/~jes/">José Espírito Santo</a>.
           </p>
           <p>
-            I'm affiliated with the <a href="#">Centre of Mathematics (CMAT)</a> and
-            supported by the Portuguese Foundation for Science and Technology (FCT).
-            Before joining the doctoral program I completed my M.Sc. in Mathematics
-            at the University of Minho.
+           I'm a collaborator member of <a href="https://liacc.fe.up.pt/liaccwp/">LIACC – Artificial Intelligence and Computer Science Laboratory</a> of the University of Porto. In parallel, I am an Invited Assistant Professor at the Faculty of Sciences of University of Porto, where I teach Discrete Mathematics and Theory of Computation. 
           </p>
           <p>
-            My other academic interests include type theory, functional programming,
-            and the design of interactive proof assistants.
+            My academic interests include proof search, proof theory, type theory and the design of interactive proof assistants.
           </p>
         </div>
       </section>
