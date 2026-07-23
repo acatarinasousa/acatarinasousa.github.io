@@ -153,7 +153,7 @@ function Content() {
                 ["Autumn School Proof and Computation", "Fischbachau, DE", "September 2022"],
               ].map(([e, l, d]) => (
                 <tr key={e} className="border-t border-border">
-                  <td className="px-4 py-2.5"><a href="#">{e}</a></td>
+                  <td className="px-4 py-2.5"><a href="a">{e}</a></td>
                   <td className="px-4 py-2.5 text-muted-foreground">{l}</td>
                   <td className="px-4 py-2.5 text-muted-foreground">{d}</td>
                 </tr>
