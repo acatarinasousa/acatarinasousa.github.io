@@ -132,24 +132,6 @@ function Content() {
         </div>
       </section>
 
-      <section id="research">
-        <h2 className="text-3xl">Research</h2>
-        <ul className="mt-5 space-y-6">
-          <li>
-            <p className="text-[17px]">Proof Search in Natural Deduction with Partial Proof Terms</p>
-            <p className="mt-1 text-sm text-muted-foreground">
-              A. C. Sousa, J. Espírito Santo — in preparation, 2026.
-            </p>
-          </li>
-          <li>
-            <p className="text-[17px]">A Focused System for Intuitionistic Natural Deduction</p>
-            <p className="mt-1 text-sm text-muted-foreground">
-              Working paper, University of Minho, 2025.
-            </p>
-          </li>
-        </ul>
-      </section>
-
       <section id="teaching">
         <h2 className="text-3xl">Have We Met? I’ve Been To…</h2>
         <div className="mt-5 overflow-hidden border border-border">
@@ -180,6 +162,24 @@ function Content() {
           </table>
         </div>
       </section>
+
+            <section id="research">
+        <h2 className="text-3xl">Research</h2>
+        <ul className="mt-5 space-y-6">
+          <li>
+            <p className="text-[17px]"></p>
+            <p className="mt-1 text-sm text-muted-foreground">
+            </p>
+          </li>
+          <li>
+            <p className="text-[17px]"></p>
+            <p className="mt-1 text-sm text-muted-foreground">
+             
+            </p>
+          </li>
+        </ul>
+      </section>
+
     </div>
   );
 }
@@ -188,7 +188,7 @@ function Footer() {
   return (
     <footer className="mt-20 bg-primary text-primary-foreground/70">
       <div className="mx-auto max-w-6xl px-6 py-8 text-sm">
-        <p>© 2026 Ana Catarina Sousa · Doctoral Program in Applied Mathematics · University of Minho</p>
+        <p>© 2026 Ana Catarina Sousa</p>
       </div>
     </footer>
   );
