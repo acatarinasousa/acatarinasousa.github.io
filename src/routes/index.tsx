@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Link } from "@tanstack/react-router";
 import { MapPin, Building2, Github, Linkedin, Mail, GraduationCap, FlaskConical, Search } from "lucide-react";
 import portrait from "@/assets/portrait.jpg";
+import cv from "@/assets/files/CV_AnaCatarinaSousa.pdf";
 import { Megaphone } from "lucide-react";
 
 export const Route = createFileRoute("/")({
@@ -59,7 +60,7 @@ function Nav() {
           <a href="#research" className="!text-primary-foreground/70 !no-underline hover:!text-primary-foreground">About Me</a>
           <a href="#research" className="!text-primary-foreground/70 !no-underline hover:!text-primary-foreground">Research</a>
           <a href="#teaching" className="!text-primary-foreground/70 !no-underline hover:!text-primary-foreground">Teaching</a>
-          <a href="#teaching" className="!text-primary-foreground/70 !no-underline hover:!text-primary-foreground">CV</a>
+          <a href="@/assets/files/CV_AnaCatarinaSousa.pdf" className="!text-primary-foreground/70 !no-underline hover:!text-primary-foreground">CV</a>
         </div>
       </nav>
     </header>
