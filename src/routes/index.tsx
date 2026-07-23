@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Link } from "@tanstack/react-router";
 import { MapPin, Building2, Github, Linkedin, Mail, GraduationCap, FlaskConical, Search } from "lucide-react";
 import portrait from "@/assets/portrait.jpg";
+import { Megaphone } from "lucide-react";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -35,11 +36,11 @@ function JobBanner() {
   return (
     <div className="border-y border-border bg-secondary/50 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center gap-4 px-6 py-3.5">
-        <Search className="h-4 w-4 shrink-0 text-muted-foreground" strokeWidth={1.5} />
+        <Megaphone className="h-4 w-4 shrink-0 text-muted-foreground" strokeWidth={1.5} />
         <p className="text-[15px] text-foreground">
           Currently looking for a postdoc position!
         </p>
-        <a href="mailto:acsousa@fe.up.pt" className="ml-auto hidden text-[15px] underline sm:block">
+        <a href="mailto:acsousa@fe.up.pt" className="ml-auto text-[15px] underline">
           Get in touch
         </a>
       </div>
