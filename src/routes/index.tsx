@@ -106,7 +106,7 @@ function Sidebar() {
         </li>
         <li className="flex items-center gap-2.5">
           <GraduationCap className="h-4 w-4 shrink-0" strokeWidth={1.5} />
-          <a href="https://www.cienciavitae.pt/8B17-243B-9170">CiênciaVitae</a>
+          <a href="https://www.cienciavitae.pt/8B17-243B-9170">Ciência Vitae</a>
         </li>
       </ul>
     </aside>
