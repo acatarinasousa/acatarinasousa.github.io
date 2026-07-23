@@ -6,10 +6,20 @@
 // You can pass additional config via defineConfig({ vite: { ... }, etc... }) if needed.
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
+const basePath = process.env.BASE_PATH ?? "/";
+
 export default defineConfig({
-  tanstackStart: {
-    // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
-    // nitro/vite builds from this
-    server: { entry: "server" },
+  vite: {
+    base: basePath,
   },
+  tanstackStart: {
+    // Prerender all static routes so GitHub Pages serves plain HTML files.
+    prerender: {
+      enabled: true,
+      crawlLinks: true,
+      failOnError: false,
+    },
+  },
+  // Disable the Cloudflare SSR/Nitro output; GitHub Pages only serves static files.
+  nitro: false,
 });
