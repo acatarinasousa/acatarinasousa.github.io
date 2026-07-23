@@ -151,7 +151,7 @@ function Content() {
       </section>
 
       <section id="teaching">
-        <h2 className="text-3xl">Where I've Been</h2>
+        <h2 className="text-3xl">Have We Met? I’ve Been To…</h2>
         <div className="mt-5 overflow-hidden border border-border">
           <table className="w-full text-[15px]">
             <thead className="bg-secondary text-left">
@@ -163,11 +163,12 @@ function Content() {
             </thead>
             <tbody>
               {[
-                ["PhD Defense — Proof Search in Natural Deduction", "Braga, PT", "March 2026"],
-                ["TYPES 2025", "Glasgow, UK", "June 2025"],
-                ["Lisbon Logic Seminar", "Lisbon, PT", "March 2025"],
-                ["ITP 2024", "Tbilisi, GE", "September 2024"],
-                ["PLR Workshop", "Braga, PT", "May 2024"],
+                ["FLoC 2026", "Lisbon, PT", "July 2026"],
+                ["OPLSS 2026", "Eugene, USA", "June 2026"],
+                ["WoLLIC 2025", "Porto, PT", "July 2025"],
+                ["Women in Logic 2024", "Tallinn, EE", "July 2024"],
+                ["SPLogic", "Campinas, BR", "February 2023"],
+                ["Autumn School Proof and Computation", "Fischbachau, DE", "September 2022"],
               ].map(([e, l, d]) => (
                 <tr key={e} className="border-t border-border">
                   <td className="px-4 py-2.5"><a href="#">{e}</a></td>
