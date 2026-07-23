@@ -33,7 +33,7 @@ function Index() {
 
 function JobBanner() {
   return (
-    <div className="border-y border-border bg-secondary/50">
+    <div className="sticky top-0 z-50 border-y border-border bg-secondary/50 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center gap-4 px-6 py-3.5">
         <Search className="h-4 w-4 shrink-0 text-muted-foreground" strokeWidth={1.5} />
         <p className="text-[15px] text-foreground">
@@ -49,7 +49,7 @@ function JobBanner() {
 
 function Nav() {
   return (
-    <header className="bg-primary text-primary-foreground">
+    <header className="sticky top-0 z-40 bg-primary text-primary-foreground">
       <nav className="mx-auto flex max-w-6xl items-center gap-8 px-6 py-6 text-[15px]">
         <Link to="/" className="!text-primary-foreground !no-underline font-normal tracking-tight">
           Ana Catarina Sousa
