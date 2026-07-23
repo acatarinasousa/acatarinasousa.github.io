@@ -145,15 +145,15 @@ function Content() {
             </thead>
             <tbody>
               {[
-                ["FLoC 2026", "Lisbon, PT", "July 2026"],
-                ["OPLSS 2026", "Eugene, USA", "June 2026"],
-                ["WoLLIC 2025", "Porto, PT", "July 2025"],
-                ["Women in Logic 2024", "Tallinn, EE", "July 2024"],
-                ["SPLogic", "Campinas, BR", "February 2023"],
-                ["Autumn School Proof and Computation", "Fischbachau, DE", "September 2022"],
-              ].map(([e, l, d]) => (
+                ["FLoC 2026", "Lisbon, PT", "July 2026", "https://www.floc26.org"],
+                ["OPLSS 2026", "Eugene, USA", "June 2026", "https://www.cs.uoregon.edu/research/summerschool/summer26/index.php"],
+                ["WoLLIC 2025", "Porto, PT", "July 2025", "https://wollic2025.github.io"],
+                ["Women in Logic 2024", "Tallinn, EE", "July 2024", "https://sites.google.com/view/wil24/home"],
+                ["SPLogic", "Campinas, BR", "February 2023", "https://www.cle.unicamp.br/splogic/"],
+                ["Autumn School Proof and Computation", "Fischbachau, DE", "September 2022", "https://www.mathematik.uni-muenchen.de/~schwicht/pc25.php"],
+              ].map(([e, l, d, link]) => (
                 <tr key={e} className="border-t border-border">
-                  <td className="px-4 py-2.5"><a href="a">{e}</a></td>
+                   <td className="px-4 py-2.5"><a href={link}>{e}</a></td>
                   <td className="px-4 py-2.5 text-muted-foreground">{l}</td>
                   <td className="px-4 py-2.5 text-muted-foreground">{d}</td>
                 </tr>
