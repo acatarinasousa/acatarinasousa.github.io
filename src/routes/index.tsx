@@ -57,7 +57,7 @@ function Nav() {
           Ana Catarina Sousa
         </Link>
         <div className="ml-auto flex items-center gap-7">
-          <a href="#research" className="!text-primary-foreground/70 !no-underline hover:!text-primary-foreground">About Me</a>
+          <a href="#about" className="!text-primary-foreground/70 !no-underline hover:!text-primary-foreground">About Me</a>
           <a href="#research" className="!text-primary-foreground/70 !no-underline hover:!text-primary-foreground">Research</a>
           <a href="#teaching" className="!text-primary-foreground/70 !no-underline hover:!text-primary-foreground">Teaching</a>
           <a href="CV_AnaCatarinaSousa.pdf" className="!text-primary-foreground/70 !no-underline hover:!text-primary-foreground">CV</a>
@@ -119,7 +119,7 @@ function Sidebar() {
 function Content() {
   return (
     <div className="max-w-2xl space-y-12">
-      <section>
+      <section id="about">
         <h2 className="text-3xl">About Me</h2>
         <div className="mt-5 space-y-4 text-[17px] leading-relaxed text-foreground/90">
           <p>
@@ -135,7 +135,7 @@ function Content() {
         </div>
       </section>
 
-      <section id="teaching">
+      <section id="whereivebeen">
         <h2 className="text-3xl">Have We Met? I’ve Been To…</h2>
         <div className="mt-5 overflow-hidden border border-border">
           <table className="w-full text-[15px]">
@@ -166,8 +166,25 @@ function Content() {
         </div>
       </section>
 
-            <section id="research">
+        <section id="research">
         <h2 className="text-3xl">Research</h2>
+        <ul className="mt-5 space-y-6">
+          <li>
+            <p className="text-[17px]"></p>
+            <p className="mt-1 text-sm text-muted-foreground">
+            </p>
+          </li>
+          <li>
+            <p className="text-[17px]"></p>
+            <p className="mt-1 text-sm text-muted-foreground">
+             
+            </p>
+          </li>
+        </ul>
+      </section>
+
+        <section id="teaching">
+        <h2 className="text-3xl">Teaching</h2>
         <ul className="mt-5 space-y-6">
           <li>
             <p className="text-[17px]"></p>
