@@ -169,11 +169,13 @@ function Content() {
         <section id="research" className="scroll-mt-24">
         <h2 className="text-3xl">Research</h2>
 
-        <h3 className="text-2xl">Conference Papers</h3>
+        <h3 className="text-2xl space-y-6">Conference Papers</h3>
         <ul className="mt-5 space-y-6">
           <li>
-            <p className="text-[17px]">ABC</p>
-            <p className="mt-1 text-sm text-muted-foreground">Teste123
+            <p className="text-[17px]">Proof Search in Classical Propositional Logic with Partial Proof Terms</p>
+            <p className="mt-1 text-sm text-muted-foreground">José Espírito Santo, Ana Catarina Sousa
+            </p>
+            <p className="mt-1 text-sm text-muted-foreground"> WoLLIC: 31st WOorkshop on Logic, Language, Information AND Computation
             </p>
           </li>
           <li>
