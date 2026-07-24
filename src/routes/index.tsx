@@ -169,7 +169,7 @@ function Content() {
         <section id="research" className="scroll-mt-24">
         <h2 className="text-3xl">Research</h2>
 
-        <h3 className="text-2xl">Conference Papers</h2>
+        <h3 className="text-2xl">Conference Papers</h3>
         <ul className="mt-5 space-y-6">
           <li>
             <p className="text-[17px]">ABC</p>
