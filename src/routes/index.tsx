@@ -118,8 +118,8 @@ function Sidebar() {
 
 function Content() {
   return (
-    <div className="max-w-2xl space-y-12" id="about">
-      <section>
+    <div className="max-w-2xl space-y-12" >
+      <section id="about" className="scroll-mt-24">
         <h2 className="text-3xl">About Me</h2>
         <div className="mt-5 space-y-4 text-[17px] leading-relaxed text-foreground/90">
           <p>
@@ -166,7 +166,7 @@ function Content() {
         </div>
       </section>
 
-        <section id="research">
+        <section id="research" className="scroll-mt-24">
         <h2 className="text-3xl">Research</h2>
         <ul className="mt-5 space-y-6">
           <li>
@@ -183,7 +183,7 @@ function Content() {
         </ul>
       </section>
 
-        <section id="teaching">
+        <section id="teaching" className="scroll-mt-24">
         <h2 className="text-3xl">Teaching</h2>
         <ul className="mt-5 space-y-6">
           <li>
