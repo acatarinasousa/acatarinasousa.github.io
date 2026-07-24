@@ -118,8 +118,8 @@ function Sidebar() {
 
 function Content() {
   return (
-    <div className="max-w-2xl space-y-12">
-      <section id="about">
+    <div className="max-w-2xl space-y-12" id="about">
+      <section>
         <h2 className="text-3xl">About Me</h2>
         <div className="mt-5 space-y-4 text-[17px] leading-relaxed text-foreground/90">
           <p>
