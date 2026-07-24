@@ -60,7 +60,7 @@ function Nav() {
           <a href="#research" className="!text-primary-foreground/70 !no-underline hover:!text-primary-foreground">About Me</a>
           <a href="#research" className="!text-primary-foreground/70 !no-underline hover:!text-primary-foreground">Research</a>
           <a href="#teaching" className="!text-primary-foreground/70 !no-underline hover:!text-primary-foreground">Teaching</a>
-          <a href={cv} className="!text-primary-foreground/70 !no-underline hover:!text-primary-foreground">CV</a>
+          <a href="CV_AnaCatarinaSousa.pdf" className="!text-primary-foreground/70 !no-underline hover:!text-primary-foreground">CV</a>
         </div>
       </nav>
     </header>
