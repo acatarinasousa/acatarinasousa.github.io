@@ -4,7 +4,6 @@ import { MapPin, Building2, Github, Linkedin, Mail, GraduationCap, FlaskConical,
 import portrait from "@/assets/portrait.jpg";
 import cv from "@/assets/files/CV_AnaCatarinaSousa.pdf";
 import { Megaphone } from "lucide-react";
-import { FileText } from "lucide-react";
 
 export const Route = createFileRoute("/")({
   head: () => ({
