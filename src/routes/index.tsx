@@ -175,12 +175,12 @@ function Content() {
         <li className="relative overflow-hidden">
         <FileText className="absolute right-0 top-0 h-16 w-16 text-muted-foreground/10 -z-10" />
             <p className="text-[14px]">2025</p>
-            <p className="text-[17px]">Proof Search in Classical Propositional Logic with Partial Proof Terms</p>
+            <p className="text-[17px]"><a href="https://link.springer.com/chapter/10.1007/978-3-031-99536-1_18" target="_blank" rel="noopener noreferrer">Proof Search in Classical Propositional Logic with Partial Proof Terms</a></p>
             <p className="mt-1 text-sm text-muted-foreground">
             <em>José Espírito Santo, Ana Catarina Sousa</em>
             </p>
             <p className="mt-1 text-sm text-muted-foreground">
-            <em>WoLLIC 2025: 31st Workshop on Logic, Language, Information and Computation</em>
+            <em>WoLLIC: 31st Workshop on Logic, Language, Information and Computation</em>
   </p>
 </li>
           <li>
