@@ -306,6 +306,17 @@ function Content({ activeTab }) {
             </li>
           </ul>
 
+          <h3 className="text-2xl mt-5">PhD Thesis</h3>
+          <ul className="mt-5 space-y-6">
+            <li className="relative overflow-hidden">
+              <p className="text-[14px]">2026</p>
+              <p className="text-[17px]"><a href="PhD_AnaCatarinaSousa.pdf" target="_blank" rel="noopener noreferrer">Proof Search in Natural Deduction with Partial Proof Terms</a></p>
+              <p className="mt-1 text-sm text-muted-foreground">
+                <em>Supervised by José Espírito Santo</em>
+              </p>
+            </li>
+          </ul>
+
         </section>
 
   
