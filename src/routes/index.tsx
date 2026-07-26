@@ -192,7 +192,7 @@ function Content({ activeTab }) {
         <section id="research" className="scroll-mt-24">
           <h2 className="text-3xl">Research</h2>
           <h3 className="text-2xl mt-5">Conference Papers</h3>
-          <ul className="mt-5 space-y-6">
+          <ul className="mt-4 space-y-4">
             <li className="relative overflow-hidden">
               <p className="text-[14px]">2025</p>
               <p className="text-[17px]"><a href="https://link.springer.com/chapter/10.1007/978-3-031-99536-1_18" target="_blank" rel="noopener noreferrer">Proof Search in Classical Propositional Logic with Partial Proof Terms</a></p>
@@ -216,7 +216,7 @@ function Content({ activeTab }) {
           </ul>
 
            <h3 className="text-2xl mt-5">Abstracts</h3>
-          <ul className="mt-5 space-y-6">
+          <ul className="mt-4 space-y-4">
             <li className="relative overflow-hidden">
               <p className="text-[14px]">2026</p>
               <p className="text-[17px]"><a href="https://drive.google.com/file/d/1pshKxvEb9FkH9AttcAwu3cfULkXepdOM/view?usp=sharing" target="_blank" rel="noopener noreferrer">An Intercalation Calculus with Partial Proof Terms</a></p>
@@ -240,7 +240,7 @@ function Content({ activeTab }) {
           </ul>
 
           <h3 className="text-2xl mt-5">Presentations</h3>
-          <ul className="mt-5 space-y-6">
+          <ul className="mt-4 space-y-4">
             <li className="relative overflow-hidden">
               <p className="text-[14px]">2026</p>
               <p className="text-[17px]"><a href="WiL2026.pdf">An Intercalation Calculus with Partial Proof Terms</a></p>
@@ -296,7 +296,7 @@ function Content({ activeTab }) {
           </ul>
 
           <h3 className="text-2xl mt-5">Posters</h3>
-          <ul className="mt-5 space-y-6">
+          <ul className="mt-4 space-y-4">
             <li className="relative overflow-hidden">
               <p className="text-[14px]">2021</p>
               <p className="text-[17px]"><a href="PosterOpenDayCMAT2021.pdf" target="_blank" rel="noopener noreferrer">Minimal Quantum Logic: a brief comparison with Classical Logic</a></p>
@@ -307,7 +307,7 @@ function Content({ activeTab }) {
           </ul>
 
           <h3 className="text-2xl mt-5">Thesis</h3>
-          <ul className="mt-5 space-y-6">
+          <ul className="mt-4 space-y-4">
             <li className="relative overflow-hidden">
               <p className="text-[14px]">2026</p>
               <p className="text-[17px]">PhD Thesis: <a href="PhD_AnaCatarinaSousa.pdf" target="_blank" rel="noopener noreferrer">Proof Search in Natural Deduction with Partial Proof Terms</a></p>
