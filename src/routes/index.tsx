@@ -4,6 +4,7 @@ import { MapPin, Building2, Github, Linkedin, Mail, GraduationCap, FlaskConical,
 import portrait from "@/assets/portrait.jpg";
 import cv from "@/assets/files/CV_AnaCatarinaSousa.pdf";
 import { Megaphone } from "lucide-react";
+import { FileText } from "lucide-react";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -171,14 +172,28 @@ function Content() {
 
         <h3 className="text-2xl mt-5">Conference Papers</h3>
         <ul className="mt-5 space-y-6">
-        <li className="relative overflow-hidden">
-            <p className="text-[14px]">2025</p>
-            <p className="text-[17px]">Proof Search in Classical Propositional Logic with Partial Proof Terms</p>
-            <p className="mt-1 text-sm text-muted-foreground">
-            <em>José Espírito Santo, Ana Catarina Sousa</em>
-            </p>
-            <p className="mt-1 text-sm text-muted-foreground">
-            <em>WoLLIC: 31st Workshop on Logic, Language, Information and Computation</em>
+       <li className="relative overflow-hidden">
+  <FileText className="absolute right-0 top-0 h-16 w-16 text-muted-foreground/10 -z-10" />
+  
+  
+    href="/pdfs/proof-search-2025.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="absolute right-4 top-4 text-muted-foreground hover:text-foreground transition-colors"
+    aria-label="Download PDF"
+  >
+    <FileText className="h-5 w-5" />
+  </a>
+
+  <p className="text-[14px]">2025</p>
+  <p className="text-[17px] pr-8">
+    Proof Search in Classical Propositional Logic with Partial Proof Terms
+  </p>
+  <p className="mt-1 text-sm text-muted-foreground">
+    <em>José Espírito Santo, Ana Catarina Sousa</em>
+  </p>
+  <p className="mt-1 text-sm text-muted-foreground">
+    <em>WoLLIC: 31st Workshop on Logic, Language, Information and Computation</em>
   </p>
 </li>
           <li>
