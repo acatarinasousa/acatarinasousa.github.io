@@ -261,7 +261,7 @@ function Content({ activeTab }) {
               <p className="mt-1 text-sm text-muted-foreground">
                 <em>Open Day of CMAT (Braga, PT) </em>
               </p>
-              <p className="text-[17px]"><a href="WiL2024.pdf">Partial Proof Terms in the Study of Proof Search</a></p>
+              <p className="mr-2 text-[17px]"><a href="WiL2024.pdf">Partial Proof Terms in the Study of Proof Search</a></p>
               <p className="mt-1 text-sm text-muted-foreground">
                 <em>Women in Logic 2024 (Tallinn, EE) </em>
               </p>
