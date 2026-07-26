@@ -65,19 +65,22 @@ function Nav({ activeTab, setActiveTab }) {
           Ana Catarina Sousa
         </Link>
         <div className="ml-auto flex items-center gap-7">
-          {tabs.map((tab) => (
-            <button
-              key={tab.id}
-              onClick={() => setActiveTab(tab.id)}
-              className={`!no-underline transition-colors ${
-                activeTab === tab.id
-                  ? "!text-primary-foreground"
-                  : "!text-primary-foreground/70 hover:!text-primary-foreground"
-              }`}
-            >
-              {tab.label}
-            </button>
-          ))}
+{tabs.map((tab) => (
+  <button
+    key={tab.id}
+    onClick={() => {
+      setActiveTab(tab.id);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }}
+    className={`!no-underline transition-colors ${
+      activeTab === tab.id
+        ? "!text-primary-foreground"
+        : "!text-primary-foreground/70 hover:!text-primary-foreground"
+    }`}
+  >
+    {tab.label}
+  </button>
+))}
           <a href="CV_AnaCatarinaSousa.pdf" className="!text-primary-foreground/70 !no-underline hover:!text-primary-foreground">CV</a>
         </div>
       </nav>
