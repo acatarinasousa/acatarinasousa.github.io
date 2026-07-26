@@ -377,6 +377,7 @@ function Footer() {
     <footer className="mt-20 bg-primary text-primary-foreground/70">
       <div className="mx-auto max-w-6xl px-6 py-8 text-sm">
         <p>© 2026 Ana Catarina Sousa</p>
+        <p>Last Update: 26.07.2026</p>
       </div>
     </footer>
   );
