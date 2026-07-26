@@ -3,7 +3,6 @@ import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { MapPin, Building2, Github, Linkedin, Mail, GraduationCap, FlaskConical, Search } from "lucide-react";
 import portrait from "@/assets/portrait.jpg";
-import cv from "@/assets/files/CV_AnaCatarinaSousa.pdf";
 import { Megaphone } from "lucide-react";
 
 export const Route = createFileRoute("/")({
@@ -238,6 +237,18 @@ function Content({ activeTab }) {
                 <em>Women in Logic</em>
               </p>
             </li>
+          </ul>
+
+          <h3 className="text-2xl mt-5">Presentations</h3>
+          <ul className="mt-5 space-y-6">
+            <li className="relative overflow-hidden">
+              <p className="text-[14px]">2026</p>
+              <p className="text-[17px]"><a href="WiL2026.pdf">An Intercalation Calculus with Partial Proof Terms</a></p>
+              <p className="mt-1 text-sm text-muted-foreground">
+                <em>Women in Logic 2026 (Lisbon, PT) </em>
+              </p>
+            </li>
+           
           </ul>
         </section>
       )}
