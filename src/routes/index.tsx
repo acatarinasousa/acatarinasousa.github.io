@@ -266,6 +266,32 @@ function Content({ activeTab }) {
                 <em>Women in Logic 2024 (Tallinn, EE) </em>
               </p>
             </li>
+            
+            <li className="relative overflow-hidden">
+              <p className="text-[14px]">2023</p>
+              <p className="text-[17px]"><a href="SPLogic.pdf">Proof Search in Natural Deduction</a></p>
+              <p className="mt-1 text-sm text-muted-foreground">
+                <em>SPLogic (Campinas, BR) </em>
+              </p>
+              <p className="mr-2 text-[17px]"><a href="CMATLabsFest2023.pdf">Personal and professional trajectory (in portuguese) </a></p>
+              <p className="mt-1 text-sm text-muted-foreground">
+                <em>CMAT Labs Fest 2023 (Braga, PT) </em>
+              </p>
+            </li>
+            <li className="relative overflow-hidden">
+              <p className="text-[14px]">2022</p>
+              <p className="text-[17px]"><a href="ALCMeeting2022.pdf">Proof Search in Natural Deduction: towards human-centered theorem proving</a></p>
+              <p className="mt-1 text-sm text-muted-foreground">
+                <em>ALC Meeting 2022 (Braga, PT) </em>
+              </p>
+            </li>
+            <li className="relative overflow-hidden">
+              <p className="text-[14px]">2021</p>
+              <p className="text-[17px]"><a href="ALCMeeting2021.pdf">Minimal Quantum Logic: a brief comparison with Classical Logic</a></p>
+              <p className="mt-1 text-sm text-muted-foreground">
+                <em>ALC Meeting 2021 (Braga, PT) </em>
+              </p>
+            </li>
            
           </ul>
         </section>
