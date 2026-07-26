@@ -192,7 +192,6 @@ function Content({ activeTab }) {
       {activeTab === "research" && (
         <section id="research" className="scroll-mt-24">
           <h2 className="text-3xl">Research</h2>
-
           <h3 className="text-2xl mt-5">Conference Papers</h3>
           <ul className="mt-5 space-y-6">
             <li className="relative overflow-hidden">
@@ -205,9 +204,39 @@ function Content({ activeTab }) {
                 <em>WoLLIC: 31st Workshop on Logic, Language, Information and Computation</em>
               </p>
             </li>
-            <li>
-              <p className="text-[17px]"></p>
-              <p className="mt-1 text-sm text-muted-foreground"></p>
+            <li className="relative overflow-hidden">
+              <p className="text-[14px]">2024</p>
+              <p className="text-[17px]"><a href="https://link.springer.com/chapter/10.1007/978-3-031-66997-2_16" target="_blank" rel="noopener noreferrer">Partial Proof Terms in the Study of Idealized Proof Search</a></p>
+              <p className="mt-1 text-sm text-muted-foreground">
+                <em>José Espírito Santo, Ana Catarina Sousa</em>
+              </p>
+              <p className="mt-1 text-sm text-muted-foreground">
+                <em>CICM: 17th International Conference on Intelligent Computer Mathematics</em>
+              </p>
+            </li>
+          </ul>
+
+           <h3 className="text-2xl mt-5">Abstracts</h3>
+          <ul className="mt-5 space-y-6">
+            <li className="relative overflow-hidden">
+              <p className="text-[14px]">2026</p>
+              <p className="text-[17px]"><a href="https://drive.google.com/file/d/1pshKxvEb9FkH9AttcAwu3cfULkXepdOM/view?usp=sharing" target="_blank" rel="noopener noreferrer">An Intercalation Calculus with Partial Proof Terms</a></p>
+              <p className="mt-1 text-sm text-muted-foreground">
+                <em>Ana Catarina Sousa</em>
+              </p>
+              <p className="mt-1 text-sm text-muted-foreground">
+                <em>Women in Logic</em>
+              </p>
+            </li>
+            <li className="relative overflow-hidden">
+              <p className="text-[14px]">2024</p>
+              <p className="text-[17px]"><a href="https://drive.google.com/file/d/1g_0TmajGGSK8D4w0C7IZPXOTy_Y9hdUb/view" target="_blank" rel="noopener noreferrer">Partial Proof Terms in the Study of Proof Search</a></p>
+              <p className="mt-1 text-sm text-muted-foreground">
+                <em>José Espírito Santo, Ana Catarina Sousa</em>
+              </p>
+              <p className="mt-1 text-sm text-muted-foreground">
+                <em>Women in Logic</em>
+              </p>
             </li>
           </ul>
         </section>
