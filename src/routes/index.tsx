@@ -306,14 +306,21 @@ function Content({ activeTab }) {
             </li>
           </ul>
 
-          <h3 className="text-2xl mt-5">PhD Thesis</h3>
+          <h3 className="text-2xl mt-5">Thesis</h3>
           <ul className="mt-5 space-y-6">
             <li className="relative overflow-hidden">
               <p className="text-[14px]">2026</p>
-              <p className="text-[17px]"><a href="PhD_AnaCatarinaSousa.pdf" target="_blank" rel="noopener noreferrer">Proof Search in Natural Deduction with Partial Proof Terms</a></p>
+              <p className="text-[17px]">PhD Thesis: <a href="PhD_AnaCatarinaSousa.pdf" target="_blank" rel="noopener noreferrer">Proof Search in Natural Deduction with Partial Proof Terms</a></p>
               <p className="mt-1 text-sm text-muted-foreground">
                 <em>Supervised by José Espírito Santo</em>
               </p>
+              <li className="relative overflow-hidden">
+              <p className="text-[14px]">2022</p>
+              <p className="text-[17px]">MSc Thesis: <a href="https://repositorium.uminho.pt/server/api/core/bitstreams/c918a15c-8562-4847-99dd-9bd474f1ce2c/content" target="_blank" rel="noopener noreferrer">Sistemas Dedutivos para Lógica Quântica Minimal</a> (in portuguese)</p>
+              <p className="mt-1 text-sm text-muted-foreground">
+                <em>Supervised by José Espírito Santo</em>
+              </p>
+            </li>
             </li>
           </ul>
 
