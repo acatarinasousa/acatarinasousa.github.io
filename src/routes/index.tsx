@@ -248,6 +248,13 @@ function Content({ activeTab }) {
                 <em>Women in Logic 2026 (Lisbon, PT) </em>
               </p>
             </li>
+             <li className="relative overflow-hidden">
+              <p className="text-[14px]">2025</p>
+              <p className="text-[17px]"><a href="WoLLIC.pptx">Proof Search in Classical Propositional Logic with Partial Proof Terms</a></p>
+              <p className="mt-1 text-sm text-muted-foreground">
+                <em>WoLLIC 2025 (Porto, PT) </em>
+              </p>
+            </li>
            
           </ul>
         </section>
