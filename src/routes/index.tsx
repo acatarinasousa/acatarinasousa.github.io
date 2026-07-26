@@ -71,7 +71,9 @@ function Nav({ activeTab, setActiveTab }) {
 onClick={() => {
   setActiveTab(tab.id);
   requestAnimationFrame(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    requestAnimationFrame(() => {
+      document.getElementById(tab.id)?.scrollIntoView({ behavior: "smooth" });
+    });
   });
 }}
     className={`!no-underline transition-colors ${

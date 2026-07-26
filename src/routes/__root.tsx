@@ -81,7 +81,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "description", content: "Personal academic page of Ana Catarina Sousa, PhD student in Applied Mathematics at the University of Minho." },
       { name: "author", content: "Ana Catarina Sousa" },
       { property: "og:title", content: "Ana Catarina Sousa" },
-      { property: "og:description", content: "PhD student in Applied Mathematics at the University of Minho." },
+      { property: "og:description", content: "PhD student in Applied Mathematics at the University of Minho." },s
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
