@@ -294,7 +294,21 @@ function Content({ activeTab }) {
             </li>
            
           </ul>
+
+          <h3 className="text-2xl mt-5">Posters</h3>
+          <ul className="mt-5 space-y-6">
+            <li className="relative overflow-hidden">
+              <p className="text-[14px]">2021</p>
+              <p className="text-[17px]"><a href="PosterOpenDayCMAT2021.pdf" target="_blank" rel="noopener noreferrer">Minimal Quantum Logic: a brief comparison with Classical Logic</a></p>
+              <p className="mt-1 text-sm text-muted-foreground">
+                <em>CMAT Open Day (Vila Real, PT) </em>
+              </p>
+            </li>
+          </ul>
+
         </section>
+
+  
       )}
 
       {activeTab === "teaching" && (
