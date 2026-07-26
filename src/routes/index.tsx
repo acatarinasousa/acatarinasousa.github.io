@@ -317,7 +317,7 @@ function Content({ activeTab }) {
                </li>
               <li className="relative overflow-hidden">
               <p className="text-[14px]">2022</p>
-              <p className="text-[17px]">MSc Thesis: <a href="https://repositorium.uminho.pt/server/api/core/bitstreams/c918a15c-8562-4847-99dd-9bd474f1ce2c/content" target="_blank" rel="noopener noreferrer">Deductive Systems for Minimal Quantum Logic</a> (in portuguese)</p>
+              <p className="text-[17px]">MSc Thesis: <a href="https://repositorium.uminho.pt/server/api/core/bitstreams/c918a15c-8562-4847-99dd-9bd474f1ce2c/content" target="_blank" rel="noopener noreferrer">Deductive Systems for Minimal Quantum Logic</a> <em>(in portuguese)</em></p>
               <p className="mt-1 text-sm text-muted-foreground">
                 <em>Supervised by José Espírito Santo</em>
               </p>
