@@ -332,10 +332,12 @@ function Content({ activeTab }) {
       {activeTab === "teaching" && (
         <section id="teaching" className="scroll-mt-24">
           <h2 className="text-3xl">Teaching</h2>
-          <ul className="mt-5 space-y-6">
+          <ul className="mt-4 space-y-4">
             <li>
-              <p className="text-[17px]"></p>
-              <p className="mt-1 text-sm text-muted-foreground"></p>
+              <p className="text-[14px]">Spring 2026. <a href="https://sigarra.up.pt/feup/en/UCURR_GERAL.FICHA_UC_VIEW?pv_ocorrencia_id=560095" target="_blank" rel="noopener noreferrer">Theory of Computation.</a></p>
+              <p className="mt-1 text-sm text-muted-foreground">
+                <em>Invited Assitant Lecturer. Faculdade de Engenharia da Universidade do Porto.</em>
+              </p>
             </li>
             <li>
               <p className="text-[17px]"></p>
