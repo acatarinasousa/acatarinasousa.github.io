@@ -68,10 +68,12 @@ function Nav({ activeTab, setActiveTab }) {
 {tabs.map((tab) => (
   <button
     key={tab.id}
-    onClick={() => {
-      setActiveTab(tab.id);
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }}
+onClick={() => {
+  setActiveTab(tab.id);
+  requestAnimationFrame(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+}}
     className={`!no-underline transition-colors ${
       activeTab === tab.id
         ? "!text-primary-foreground"
