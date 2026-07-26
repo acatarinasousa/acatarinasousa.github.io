@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Link } from "@tanstack/react-router";
+import { useState } from "react";
 import { MapPin, Building2, Github, Linkedin, Mail, GraduationCap, FlaskConical, Search } from "lucide-react";
 import portrait from "@/assets/portrait.jpg";
 import cv from "@/assets/files/CV_AnaCatarinaSousa.pdf";
@@ -18,14 +19,16 @@ export const Route = createFileRoute("/")({
 });
 
 function Index() {
+  const [activeTab, setActiveTab] = useState("about");
+
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <Nav />
+      <Nav activeTab={activeTab} setActiveTab={setActiveTab} />
       <JobBanner />
       <main className="mx-auto max-w-6xl px-6 py-12 lg:py-16">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-[280px_1fr] lg:gap-16">
           <Sidebar />
-          <Content />
+          <Content activeTab={activeTab} />
         </div>
       </main>
       <Footer />
@@ -49,7 +52,13 @@ function JobBanner() {
   );
 }
 
-function Nav() {
+function Nav({ activeTab, setActiveTab }) {
+  const tabs = [
+    { id: "about", label: "About Me" },
+    { id: "research", label: "Research" },
+    { id: "teaching", label: "Teaching" },
+  ];
+
   return (
     <header className="sticky top-0 z-40 bg-primary text-primary-foreground">
       <nav className="mx-auto flex max-w-6xl items-center gap-8 px-6 py-6 text-[15px]">
@@ -57,9 +66,19 @@ function Nav() {
           Ana Catarina Sousa
         </Link>
         <div className="ml-auto flex items-center gap-7">
-          <a href="#about" className="!text-primary-foreground/70 !no-underline hover:!text-primary-foreground">About Me</a>
-          <a href="#research" className="!text-primary-foreground/70 !no-underline hover:!text-primary-foreground">Research</a>
-          <a href="#teaching" className="!text-primary-foreground/70 !no-underline hover:!text-primary-foreground">Teaching</a>
+          {tabs.map((tab) => (
+            <button
+              key={tab.id}
+              onClick={() => setActiveTab(tab.id)}
+              className={`!no-underline transition-colors ${
+                activeTab === tab.id
+                  ? "!text-primary-foreground"
+                  : "!text-primary-foreground/70 hover:!text-primary-foreground"
+              }`}
+            >
+              {tab.label}
+            </button>
+          ))}
           <a href="CV_AnaCatarinaSousa.pdf" className="!text-primary-foreground/70 !no-underline hover:!text-primary-foreground">CV</a>
         </div>
       </nav>
@@ -116,97 +135,99 @@ function Sidebar() {
   );
 }
 
-function Content() {
+function Content({ activeTab }) {
   return (
-    <div className="max-w-2xl space-y-12" >
-      <section id="about" className="scroll-mt-24">
-        <h2 className="text-3xl">About Me</h2>
-        <div className="mt-5 space-y-4 text-[17px] leading-relaxed text-foreground/90">
-          <p>
-            Hi! I'm Ana Catarina and I just concluded my <a href="https://map-pdma.up.pt" target="_blank" rel="noopener noreferrer">PhD in Applied Mathematics</a> , a joint program of the Portuguese universities of Aveiro, Porto and Minho, where I studied “Proof Search in Natural Deduction with Partial Proof Terms”, under the
-            supervision of <a href="https://w3.math.uminho.pt/~jes/" target="_blank" rel="noopener noreferrer">José Espírito Santo</a>.
-          </p>
-          <p>
-           I'm a collaborator member of <a href="https://liacc.fe.up.pt/liaccwp/" target="_blank" rel="noopener noreferrer">LIACC – Artificial Intelligence and Computer Science Laboratory</a> of the University of Porto. In parallel, I am an Invited Assistant Professor at the Faculty of Sciences of University of Porto, where I teach Discrete Mathematics and Theory of Computation. 
-          </p>
-          <p>
-            My academic interests include proof search, proof theory, type theory and proof assistants.
-          </p>
-        </div>
-      </section>
+    <div className="max-w-2xl space-y-12">
+      {activeTab === "about" && (
+        <>
+          <section id="about" className="scroll-mt-24">
+            <h2 className="text-3xl">About Me</h2>
+            <div className="mt-5 space-y-4 text-[17px] leading-relaxed text-foreground/90">
+              <p>
+                Hi! I'm Ana Catarina and I just concluded my <a href="https://map-pdma.up.pt" target="_blank" rel="noopener noreferrer">PhD in Applied Mathematics</a> , a joint program of the Portuguese universities of Aveiro, Porto and Minho, where I studied “Proof Search in Natural Deduction with Partial Proof Terms”, under the
+                supervision of <a href="https://w3.math.uminho.pt/~jes/" target="_blank" rel="noopener noreferrer">José Espírito Santo</a>.
+              </p>
+              <p>
+               I'm a collaborator member of <a href="https://liacc.fe.up.pt/liaccwp/" target="_blank" rel="noopener noreferrer">LIACC – Artificial Intelligence and Computer Science Laboratory</a> of the University of Porto. In parallel, I am an Invited Assistant Professor at the Faculty of Sciences of University of Porto, where I teach Discrete Mathematics and Theory of Computation. 
+              </p>
+              <p>
+                My academic interests include proof search, proof theory, type theory and proof assistants.
+              </p>
+            </div>
+          </section>
 
-      <section id="whereivebeen">
-        <h2 className="text-3xl">Have We Met? I’ve Been To…</h2>
-        <div className="mt-5 overflow-hidden border border-border">
-          <table className="w-full text-[15px]">
-            <thead className="bg-secondary text-left">
-              <tr>
-                <th className="px-4 py-2.5 font-semibold">Event</th>
-                <th className="px-4 py-2.5 font-semibold">Location</th>
-                <th className="px-4 py-2.5 font-semibold">Date</th>
-              </tr>
-            </thead>
-            <tbody>
-              {[
-                ["FLoC 2026", "Lisbon, PT", "July 2026", "https://www.floc26.org"],
-                ["OPLSS 2026", "Eugene, USA", "June 2026", "https://www.cs.uoregon.edu/research/summerschool/summer26/index.php"],
-                ["WoLLIC 2025", "Porto, PT", "July 2025", "https://wollic2025.github.io"],
-                ["Women in Logic 2024", "Tallinn, EE", "July 2024", "https://sites.google.com/view/wil24/home"],
-                ["SPLogic", "Campinas, BR", "February 2023", "https://www.cle.unicamp.br/splogic/"],
-                ["Autumn School Proof and Computation", "Fischbachau, DE", "September 2022", "https://www.mathematik.uni-muenchen.de/~schwicht/pc22.php"],
-              ].map(([e, l, d, link]) => (
-                <tr key={e} className="border-t border-border">
-                   <td className="px-4 py-2.5"><a href={link} target="_blank" rel="noopener noreferrer">{e}</a></td>
-                  <td className="px-4 py-2.5 text-muted-foreground">{l}</td>
-                  <td className="px-4 py-2.5 text-muted-foreground">{d}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </section>
+          <section id="whereivebeen">
+            <h2 className="text-3xl">Have We Met? I've Been To…</h2>
+            <div className="mt-5 overflow-hidden border border-border">
+              <table className="w-full text-[15px]">
+                <thead className="bg-secondary text-left">
+                  <tr>
+                    <th className="px-4 py-2.5 font-semibold">Event</th>
+                    <th className="px-4 py-2.5 font-semibold">Location</th>
+                    <th className="px-4 py-2.5 font-semibold">Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    ["FLoC 2026", "Lisbon, PT", "July 2026", "https://www.floc26.org"],
+                    ["OPLSS 2026", "Eugene, USA", "June 2026", "https://www.cs.uoregon.edu/research/summerschool/summer26/index.php"],
+                    ["WoLLIC 2025", "Porto, PT", "July 2025", "https://wollic2025.github.io"],
+                    ["Women in Logic 2024", "Tallinn, EE", "July 2024", "https://sites.google.com/view/wil24/home"],
+                    ["SPLogic", "Campinas, BR", "February 2023", "https://www.cle.unicamp.br/splogic/"],
+                    ["Autumn School Proof and Computation", "Fischbachau, DE", "September 2022", "https://www.mathematik.uni-muenchen.de/~schwicht/pc22.php"],
+                  ].map(([e, l, d, link]) => (
+                    <tr key={e} className="border-t border-border">
+                       <td className="px-4 py-2.5"><a href={link} target="_blank" rel="noopener noreferrer">{e}</a></td>
+                      <td className="px-4 py-2.5 text-muted-foreground">{l}</td>
+                      <td className="px-4 py-2.5 text-muted-foreground">{d}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </>
+      )}
 
+      {activeTab === "research" && (
         <section id="research" className="scroll-mt-24">
-        <h2 className="text-3xl">Research</h2>
+          <h2 className="text-3xl">Research</h2>
 
-        <h3 className="text-2xl mt-5">Conference Papers</h3>
-        <ul className="mt-5 space-y-6">
-        <li className="relative overflow-hidden">
-            <p className="text-[14px]">2025</p>
-            <p className="text-[17px]"><a href="https://link.springer.com/chapter/10.1007/978-3-031-99536-1_18" target="_blank" rel="noopener noreferrer">Proof Search in Classical Propositional Logic with Partial Proof Terms</a></p>
-            <p className="mt-1 text-sm text-muted-foreground">
-            <em>José Espírito Santo, Ana Catarina Sousa</em>
-            </p>
-            <p className="mt-1 text-sm text-muted-foreground">
-            <em>WoLLIC: 31st Workshop on Logic, Language, Information and Computation</em>
-  </p>
-</li>
-          <li>
-            <p className="text-[17px]"></p>
-            <p className="mt-1 text-sm text-muted-foreground">
-             
-            </p>
-          </li>
-        </ul>
-      </section>
+          <h3 className="text-2xl mt-5">Conference Papers</h3>
+          <ul className="mt-5 space-y-6">
+            <li className="relative overflow-hidden">
+              <p className="text-[14px]">2025</p>
+              <p className="text-[17px]"><a href="https://link.springer.com/chapter/10.1007/978-3-031-99536-1_18" target="_blank" rel="noopener noreferrer">Proof Search in Classical Propositional Logic with Partial Proof Terms</a></p>
+              <p className="mt-1 text-sm text-muted-foreground">
+                <em>José Espírito Santo, Ana Catarina Sousa</em>
+              </p>
+              <p className="mt-1 text-sm text-muted-foreground">
+                <em>WoLLIC: 31st Workshop on Logic, Language, Information and Computation</em>
+              </p>
+            </li>
+            <li>
+              <p className="text-[17px]"></p>
+              <p className="mt-1 text-sm text-muted-foreground"></p>
+            </li>
+          </ul>
+        </section>
+      )}
 
+      {activeTab === "teaching" && (
         <section id="teaching" className="scroll-mt-24">
-        <h2 className="text-3xl">Teaching</h2>
-        <ul className="mt-5 space-y-6">
-          <li>
-            <p className="text-[17px]"></p>
-            <p className="mt-1 text-sm text-muted-foreground">
-            </p>
-          </li>
-          <li>
-            <p className="text-[17px]"></p>
-            <p className="mt-1 text-sm text-muted-foreground">
-             
-            </p>
-          </li>
-        </ul>
-      </section>
-
+          <h2 className="text-3xl">Teaching</h2>
+          <ul className="mt-5 space-y-6">
+            <li>
+              <p className="text-[17px]"></p>
+              <p className="mt-1 text-sm text-muted-foreground"></p>
+            </li>
+            <li>
+              <p className="text-[17px]"></p>
+              <p className="mt-1 text-sm text-muted-foreground"></p>
+            </li>
+          </ul>
+        </section>
+      )}
     </div>
   );
 }
