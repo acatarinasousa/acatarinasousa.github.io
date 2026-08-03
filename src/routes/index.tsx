@@ -348,7 +348,7 @@ function Content({ activeTab }) {
                 <em>Invited Assistant Professor. Faculdade de Engenharia da Universidade do Porto.</em>
               </p>
               <p className="text-[14px]">
-              <a href="" target="_blank" rel="noopener noreferrer">Mathematics</a> (BSc.) and <a href="" target="_blank" rel="noopener noreferrer">Mathematical Foundations for AI</a> </p>
+              <a href="" target="_blank" rel="noopener noreferrer">Mathematics</a> (BSc.) and <a href="" target="_blank" rel="noopener noreferrer">Mathematical Foundations for AI</a> (MSc.) </p>
               <p className="mt-1 text-sm text-muted-foreground">
                 <em>Invited Assistant Professor. Universidade Politécnica do Cávado e do Ave.</em>
               </p>
