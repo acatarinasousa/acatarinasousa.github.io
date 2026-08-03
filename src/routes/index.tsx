@@ -347,27 +347,43 @@ function Content({ activeTab }) {
               <p className="mt-1 text-sm text-muted-foreground">
                 <em>Invited Assistant Professor. Faculdade de Engenharia da Universidade do Porto.</em>
               </p>
+              <p className="text-[14px]">
+              <a href="" target="_blank" rel="noopener noreferrer">Mathematics</a> (BSc.) and <a href="" target="_blank" rel="noopener noreferrer">Mathematical Foundations for AI</a> </p>
+              <p className="mt-1 text-sm text-muted-foreground">
+                <em>Invited Assistant Professor. Universidade Politécnica do Cávado e do Ave.</em>
+              </p>
             </li>
             <li>
-              <p className="text-[14px]"><strong>Spring 2026. </strong><a href="https://sigarra.up.pt/feup/en/UCURR_GERAL.FICHA_UC_VIEW?pv_ocorrencia_id=560095" target="_blank" rel="noopener noreferrer"> Theory of Computation</a></p>
+              <p className="text-[14px]"><strong>Spring 2026. </strong>
+              </p>
+              <p className="text-[14px]">
+              <a href="https://sigarra.up.pt/feup/en/UCURR_GERAL.FICHA_UC_VIEW?pv_ocorrencia_id=560095" target="_blank" rel="noopener noreferrer"> Theory of Computation</a></p>
               <p className="mt-1 text-sm text-muted-foreground">
                 <em>Invited Assistant Lecturer. Faculdade de Engenharia da Universidade do Porto.</em>
               </p>
             </li>
               <li>
-              <p className="text-[14px]"><strong>Fall 2025. </strong><a href="https://sigarra.up.pt/feup/en/ucurr_geral.ficha_uc_view?pv_ocorrencia_id=560089" target="_blank" rel="noopener noreferrer"> Discrete Mathematics</a></p>
+              <p className="text-[14px]"><strong>Fall 2025.</strong>
+              </p>
+              <p className="text-[14px]">
+              <a href="https://sigarra.up.pt/feup/en/ucurr_geral.ficha_uc_view?pv_ocorrencia_id=560089" target="_blank" rel="noopener noreferrer"> Discrete Mathematics</a></p>
               <p className="mt-1 text-sm text-muted-foreground">
                 <em>Invited Assistant Lecturer. Faculdade de Engenharia da Universidade do Porto.</em>
               </p>
             </li>
             <li>
-              <p className="text-[14px]"><strong>Spring 2025. </strong><a href="https://sigarra.up.pt/feup/en/ucurr_geral.ficha_uc_view?pv_ocorrencia_id=541875" target="_blank" rel="noopener noreferrer"> Theory of Computation</a></p>
+              <p className="text-[14px]"><strong>Spring 2025. </strong>
+              </p>
+              <p className="text-[14px]">
+              <a href="https://sigarra.up.pt/feup/en/ucurr_geral.ficha_uc_view?pv_ocorrencia_id=541875" target="_blank" rel="noopener noreferrer"> Theory of Computation</a></p>
               <p className="mt-1 text-sm text-muted-foreground">
                 <em>Invited Assistant Lecturer. Faculdade de Engenharia da Universidade do Porto.</em>
               </p>
             </li>
              <li>
-              <p className="text-[14px]"><strong>Fall 2024. </strong><a href="https://sigarra.up.pt/feup/en/ucurr_geral.ficha_uc_view?pv_ocorrencia_id=541869" target="_blank" rel="noopener noreferrer"> Discrete Mathematics</a></p>
+              <p className="text-[14px]"><strong>Fall 2024. </strong></p>
+              <p className="text-[14px]">
+              <a href="https://sigarra.up.pt/feup/en/ucurr_geral.ficha_uc_view?pv_ocorrencia_id=541869" target="_blank" rel="noopener noreferrer"> Discrete Mathematics</a></p>
               <p className="mt-1 text-sm text-muted-foreground">
                 <em>Invited Assistant Lecturer. Faculdade de Engenharia da Universidade do Porto.</em>
               </p>
