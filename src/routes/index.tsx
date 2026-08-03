@@ -340,6 +340,14 @@ function Content({ activeTab }) {
         <section id="teaching" className="scroll-mt-24">
           <h2 className="text-3xl">Teaching</h2>
           <ul className="mt-4 space-y-4">
+              <li>
+              <p className="text-[14px]"><strong>Fall 2026. </strong></p>
+              <p className="text-[14px]">
+              <a href="https://sigarra.up.pt/feup/en/UCURR_GERAL.FICHA_UC_VIEW?pv_ocorrencia_id=586983" target="_blank" rel="noopener noreferrer"> Discrete Mathematics</a></p>
+              <p className="mt-1 text-sm text-muted-foreground">
+                <em>Invited Assistant Professor. Faculdade de Engenharia da Universidade do Porto.</em>
+              </p>
+            </li>
             <li>
               <p className="text-[14px]"><strong>Spring 2026. </strong><a href="https://sigarra.up.pt/feup/en/UCURR_GERAL.FICHA_UC_VIEW?pv_ocorrencia_id=560095" target="_blank" rel="noopener noreferrer"> Theory of Computation</a></p>
               <p className="mt-1 text-sm text-muted-foreground">
