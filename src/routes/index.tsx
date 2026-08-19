@@ -348,7 +348,7 @@ function Content({ activeTab }) {
                 <em>Invited Assistant Professor. Faculdade de Engenharia da Universidade do Porto.</em>
               </p>
               <p className="text-[14px] mt-2 space-y-2">
-              <a href="https://esg.ipca.pt/en/curso/finances/" target="_blank" rel="noopener noreferrer">Mathematics</a> and <a href="https://est.ipca.pt/en/curso/applied-artificial-intelligence/" target="_blank" rel="noopener noreferrer">Mathematical Foundations for AI</a></p>
+              <a href="https://esg.ipca.pt/en/curso/finances/" target="_blank" rel="noopener noreferrer">Linear Algebra</a> &amp <a href="https://est.ipca.pt/en/curso/applied-artificial-intelligence/" target="_blank" rel="noopener noreferrer">Mathematical Foundations for AI</a></p>
               <p className="mt-1 text-sm text-muted-foreground">
                 <em>Invited Assistant Professor. Universidade Politécnica do Cávado e do Ave.</em>
               </p>
