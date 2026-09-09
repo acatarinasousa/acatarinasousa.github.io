@@ -41,7 +41,7 @@ function JobBanner() {
       <div className="mx-auto flex max-w-6xl items-center gap-4 px-6 py-3.5">
         <Megaphone className="h-4 w-4 shrink-0 text-muted-foreground" strokeWidth={1.5} />
         <p className="text-[15px] text-foreground">
-          Currently looking for a postdoc position!
+          Currently looking for a postdoc position and scientific colaborations!
         </p>
         <a href="mailto:acsousa@fe.up.pt" className="ml-auto text-[15px] underline">
           Get in touch
@@ -118,7 +118,7 @@ function Sidebar() {
         </li>
         <li className="flex items-center gap-2.5">
           <Building2 className="h-4 w-4 shrink-0" strokeWidth={1.5} />
-          Faculty of Sciences, University of Porto
+          Faculdade de Ciências, Universidade do Porto
         </li>
         <li className="flex items-center gap-2.5">
           <Mail className="h-4 w-4 shrink-0" strokeWidth={1.5} />
@@ -150,7 +150,7 @@ function Content({ activeTab }) {
             <h2 className="text-3xl">About Me</h2>
             <div className="mt-5 space-y-4 text-[17px] leading-relaxed text-foreground/90">
               <p>
-                Hi! I'm Ana Catarina and I just concluded my <a href="https://map-pdma.up.pt" target="_blank" rel="noopener noreferrer">PhD in Applied Mathematics</a> , a joint program of the Portuguese universities of Aveiro, Porto and Minho, where I studied “Proof Search in Natural Deduction with Partial Proof Terms”, under the
+                Hi! I'm Ana Catarina and I have a <a href="https://map-pdma.up.pt" target="_blank" rel="noopener noreferrer">PhD in Applied Mathematics</a> , a joint program of the Portuguese universities of Aveiro, Porto and Minho, where I studied “Proof Search in Natural Deduction with Partial Proof Terms”, under the
                 supervision of <a href="https://w3.math.uminho.pt/~jes/" target="_blank" rel="noopener noreferrer">José Espírito Santo</a>.
               </p>
               <p>
@@ -383,7 +383,7 @@ function Footer() {
     <footer className="mt-20 bg-primary text-primary-foreground/70">
       <div className="mx-auto max-w-6xl px-6 py-8 text-sm">
         <p>© 2026 Ana Catarina Sousa</p>
-        <p>Last Update: 26.07.2026</p>
+        <p>Last Update: 09.09.2026</p>
       </div>
     </footer>
   );
