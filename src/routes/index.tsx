@@ -41,7 +41,7 @@ function JobBanner() {
       <div className="mx-auto flex max-w-6xl items-center gap-4 px-6 py-3.5">
         <Megaphone className="h-4 w-4 shrink-0 text-muted-foreground" strokeWidth={1.5} />
         <p className="text-[15px] text-foreground">
-          Currently looking for a postdoc position and scientific colaborations!
+          Currently looking for scientific colaborations!
         </p>
         <a href="mailto:acsousa@fe.up.pt" className="ml-auto text-[15px] underline">
           Get in touch
